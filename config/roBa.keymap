@@ -141,6 +141,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "MT_EXIT_AML_ON_TAP";
             bindings = <&kp>, <&kp_exit_AML>;
+
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "balanced";
@@ -202,10 +203,10 @@
 
         SCROLL+EN_ARROW {
             bindings = <
-&kp LS(NUMBER_1)             &kp LS(NUMBER_9)    &kp LS(NUMBER_0)     &kp LS(NUMBER_6)  &kp LS(NUMBER_4)                              &kp LC(PAGE_UP)  &kp LS(TAB)     &kp F5          &kp LC(PAGE_DOWN)  &trans
-&kp LS(SLASH)                &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp STAR          &kp LS(NUMBER_7)  &kp GRAVE      &kp PAGE_UP  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW    &kp PAGE_DOWN
-&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)  &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp SLASH      &trans       &kp TAB          &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_GUI       &trans
-&trans                       &trans              &trans               &trans            &trans            &trans         &trans       &trans                                                              &trans
+&kp LS(NUMBER_1)             &kp LS(NUMBER_9)    &kp LS(NUMBER_0)     &kp LS(NUMBER_6)  &kp LS(NUMBER_4)                                &kp LC(PAGE_UP)  &kp LS(TAB)     &kp F5          &kp LC(PAGE_DOWN)  &trans
+&kp LS(SLASH)                &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp STAR          &kp LS(NUMBER_7)  &kp GRAVE      &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW    &mkp MB5
+&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)  &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp SLASH      &kp PAGE_DOWN  &kp TAB          &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_GUI       &mkp MB4
+&trans                       &trans              &trans               &trans            &trans            &trans         &trans         &trans                                                              &trans
             >;
         };
 

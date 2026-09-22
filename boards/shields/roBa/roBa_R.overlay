@@ -8,7 +8,7 @@
 &zip_temp_layer {
     require-prior-idle-ms = <200>;
     // J, K and L are the existing mouse button positions on layer 4.
-    excluded-positions = <18 19 20>;
+    excluded-positions = <18 19 20 22>;
 };
 
 &default_transform {

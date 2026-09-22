@@ -31,7 +31,7 @@
         #input-processor-cells = <0>;
         axis = <1>;
         layer = <ROBA_SCROLL_LAYER>;
-        scale = <4>;
+        scale = <8>;
         scale-div = <675>;
     };
 };

@@ -47,7 +47,7 @@
             &zip_y_scaler (-1) 1
             &zip_xy_to_scroll_mapper
             &scroll_inertia_v
-            &zip_scroll_scaler 4 675
+            &zip_scroll_scaler 8 675
         >;
     };
 };

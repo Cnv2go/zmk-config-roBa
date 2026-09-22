@@ -31,7 +31,7 @@
         #input-processor-cells = <0>;
         axis = <1>;
         layer = <ROBA_SCROLL_LAYER>;
-        scale = <8>;
+        scale = <6>;
         scale-div = <675>;
     };
 };
@@ -47,7 +47,7 @@
             &zip_y_scaler (-1) 1
             &zip_xy_to_scroll_mapper
             &scroll_inertia_v
-            &zip_scroll_scaler 8 675
+            &zip_scroll_scaler 6 675
         >;
     };
 };

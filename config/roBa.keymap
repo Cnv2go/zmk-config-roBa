@@ -138,10 +138,10 @@
 
         ARROW_JIS {
             bindings = <
-&kp LS(NUMBER_1)             &kp LS(NUMBER_8)     &kp LS(NUMBER_9)   &kp EQUAL         &kp LS(EQUAL)                                                &kp CARET           &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LS(SLASH)                &kp RIGHT_BRACE      &kp BACKSLASH      &kp APOSTROPHE    &kp LS(NUMBER_6)  &kp LS(LEFT_BRACE)       &kp LS(NUMBER_2)  &kp LEFT_ARROW      &kp DOWN_ARROW     &kp UP_ARROW    &kp RIGHT_ARROW       &kp PERCENT
-&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(RIGHT_BRACE)  &kp LS(BACKSLASH)  &kp LS(NUMBER_3)  &kp LEFT_BRACE    &kp INTERNATIONAL_1      &kp UNDERSCORE    &kp LS(UNDERSCORE)  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&kp CAPSLOCK                 &trans               &kp KP_NUMLOCK     &kp LEFT_SHIFT    &trans            &trans                   &trans            &trans                                                                       &kp PIPE
+&kp LS(NUMBER_1)             &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp EQUAL         &kp LS(EQUAL)                                                   &kp CARET           &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LS(SLASH)                &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LS(NUMBER_2)  &kp LS(NUMBER_6)     &kp LS(LEFT_BRACE)       &kp LS(NUMBER_2)  &kp LEFT_ARROW      &kp DOWN_ARROW     &kp UP_ARROW    &kp RIGHT_ARROW       &kp PERCENT
+&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(NUMBER_3)  &kp INTERNATIONAL_3  &kp INTERNATIONAL_1      &kp UNDERSCORE    &kp LS(UNDERSCORE)  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
+&kp CAPSLOCK                 &trans                 &kp KP_NUMLOCK     &kp LEFT_SHIFT    &trans               &trans                   &trans            &trans                                                                       &kp PIPE
             >;
         };
 

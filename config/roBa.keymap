@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 &mt {
     flavor = "balanced";
@@ -9,9 +10,6 @@
 };
 
 &trackball {
-    automouse-layer = <4>;
-    scroll-layers = <5>;
-
     // arrows {
     //     layers = <3>;
     //     bindings =
@@ -24,6 +22,11 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
+};
+
+// Keep click refresh separate from the key bindings and layer design.
+&mkp_input_listener {
+    input-processors = <&zip_temp_layer 4 700>;
 };
 
 / {

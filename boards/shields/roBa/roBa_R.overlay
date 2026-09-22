@@ -1,4 +1,15 @@
 #include "roBa.dtsi"
+#include <input/processors.dtsi>
+
+// Existing keymap layer indices. Change these only when redesigning layers.
+#define ROBA_MOUSE_LAYER 4
+#define ROBA_SCROLL_LAYER 5
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+    // J, K and L are the existing mouse button positions on layer 4.
+    excluded-positions = <18 19 20>;
+};
 
 &default_transform {
     col-offset = <6>;
@@ -15,10 +26,29 @@
 };
 
 / {
-    trackball_listener {
-        status = "okay";
-        compatible = "zmk,input-listener";
-        device = <&trackball>;
+    scroll_inertia_v: scroll_inertia_v {
+        compatible = "zmk,input-processor-scroll-inertia";
+        #input-processor-cells = <0>;
+        axis = <1>;
+        layer = <ROBA_SCROLL_LAYER>;
+        scale = <4>;
+        scale-div = <675>;
+    };
+};
+
+&trackball_listener {
+    status = "okay";
+    device = <&trackball>;
+    input-processors = <&zip_temp_layer ROBA_MOUSE_LAYER 700>;
+
+    scroller_v {
+        layers = <ROBA_SCROLL_LAYER>;
+        input-processors = <
+            &zip_y_scaler (-1) 1
+            &zip_xy_to_scroll_mapper
+            &scroll_inertia_v
+            &zip_scroll_scaler 4 675
+        >;
     };
 };
 

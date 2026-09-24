@@ -100,54 +100,35 @@
         parentheses: parentheses {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &kp LS(NUMBER_8)
-                &kp LS(NUMBER_9)
-                &kp LEFT_ARROW
-            >;
+            bindings = <&kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp LEFT_ARROW>;
             label = "PARENTHESES";
         };
+
         brackets: brackets {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &kp RIGHT_BRACKET
-                &kp BACKSLASH
-                &kp LEFT_ARROW
-            >;
+            bindings = <&kp RIGHT_BRACKET &kp BACKSLASH &kp LEFT_ARROW>;
             label = "BRACKETS";
         };
 
         braces: braces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &kp LS(RIGHT_BRACKET)
-                &kp LS(BACKSLASH)
-                &kp LEFT_ARROW
-            >;
+            bindings = <&kp LS(RIGHT_BRACKET) &kp LS(BACKSLASH) &kp LEFT_ARROW>;
             label = "BRACES";
         };
 
         double_quotes_pair: double_quotes_pair {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &kp LS(NUMBER_2)
-                &kp LS(NUMBER_2)
-                &kp LEFT_ARROW
-            >;
+            bindings = <&kp LS(NUMBER_2) &kp LS(NUMBER_2) &kp LEFT_ARROW>;
             label = "DOUBLE_QUOTES_PAIR";
         };
 
         single_quotes_pair: single_quotes_pair {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &kp LS(NUMBER_7)
-                &kp LS(NUMBER_7)
-                &kp LEFT_ARROW
-            >;
+            bindings = <&kp LS(NUMBER_7) &kp LS(NUMBER_7) &kp LEFT_ARROW>;
             label = "SINGLE_QUOTES_PAIR";
         };
     };
@@ -208,7 +189,7 @@
 
         default_layer {
             bindings = <
-&kp F                             &kp Z         &kp H         &kp P                        &kp MINUS                                                    &kp Q            &kp Y        &lt 5 O  &kp W     &kp V
+&kp F                             &kp Z         &kp H         &kp P                        &kp MINUS                                                    &kp Q            &kp Y        &lt 7 O  &kp W     &kp V
 &kp D                             &kp S         &kp N         &kp T                        &kp G        &kp LEFT_ARROW                 &kp RIGHT_ARROW  &mt BACKSPACE L  &mt MINUS A  &nn 0 I  &xtu 0 U  &mt F7 E
 &mt_exit_AML_on_tap LEFT_SHIFT B  &kp R         &kp M         &kp K                        &kp J        &lt_to_layer_0 6 TAB           &to 3            &kp X            &kp COMMA    &kp C    &kp DOT   &mkp LCLK
 &kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 LEFT_SHIFT  &lt 2 SPACE  &mt LANGUAGE_1 LANGUAGE_2      &kp BACKSPACE    &lt 1 ENTER                                      &lt 5 ESCAPE
@@ -228,10 +209,10 @@
 
         ARROW_JIS {
             bindings = <
-&kp LS(NUMBER_1)             &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp EQUAL         &kp LS(EQUAL)                                                &kp CARET           &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp LS(SLASH)                &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp LS(LEFT_BRACE)       &kp LS(NUMBER_2)  &kp LEFT_ARROW      &kp DOWN_ARROW     &kp UP_ARROW    &kp RIGHT_ARROW       &kp PERCENT
-&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(NUMBER_3)  &kp LEFT_BRACKET  &kp INTERNATIONAL_1      &kp UNDERSCORE    &kp LS(UNDERSCORE)  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&kp CAPSLOCK                 &trans                 &kp KP_NUMLOCK     &kp LEFT_SHIFT    &trans            &trans                   &trans            &trans                                                                       &kp PIPE
+&kp LS(NUMBER_1)             &kp LS(NUMBER_8)       &kp LS(NUMBER_9)   &kp EQUAL         &kp LS(EQUAL)                                                &parentheses        &brackets       &braces       &double_quotes_pair  &single_quotes_pair
+&kp LS(SLASH)                &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp LS(LEFT_BRACE)       &kp LS(NUMBER_2)  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW      &kp SLASH
+&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LS(NUMBER_3)  &kp LEFT_BRACKET  &kp INTERNATIONAL_1      &kp UNDERSCORE    &kp LS(UNDERSCORE)  &kp PERIOD      &kp ASTERISK  &kp PLUS             &kp MINUS
+&kp CAPSLOCK                 &trans                 &kp KP_NUMLOCK     &kp LEFT_SHIFT    &trans            &trans                   &trans            &trans                                                                 &kp PIPE
             >;
         };
 

@@ -96,6 +96,60 @@
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &exit_AML>;
             label = "KP_EXIT_AML";
         };
+
+        parentheses: parentheses {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LS(NUMBER_8)
+                &kp LS(NUMBER_9)
+                &kp LEFT_ARROW
+            >;
+            label = "PARENTHESES";
+        };
+        brackets: brackets {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp RIGHT_BRACKET
+                &kp BACKSLASH
+                &kp LEFT_ARROW
+            >;
+            label = "BRACKETS";
+        };
+
+        braces: braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LS(RIGHT_BRACKET)
+                &kp LS(BACKSLASH)
+                &kp LEFT_ARROW
+            >;
+            label = "BRACES";
+        };
+
+        double_quotes_pair: double_quotes_pair {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LS(NUMBER_2)
+                &kp LS(NUMBER_2)
+                &kp LEFT_ARROW
+            >;
+            label = "DOUBLE_QUOTES_PAIR";
+        };
+
+        single_quotes_pair: single_quotes_pair {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <
+                &kp LS(NUMBER_7)
+                &kp LS(NUMBER_7)
+                &kp LEFT_ARROW
+            >;
+            label = "SINGLE_QUOTES_PAIR";
+        };
     };
 
     behaviors {
@@ -216,6 +270,15 @@
 &trans  &trans        &trans        &kp LS(LA(LC(R)))  &trans  &kp LS(LA(LC(Q)))      &trans       &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &trans  &trans                 &bootloader  &trans         &trans         &trans         &trans         &bt BT_CLR
 &trans  &trans        &trans        &trans             &trans  &trans                 &trans       &trans                                                      &bt BT_CLR_ALL
+            >;
+        };
+
+        SCROLL_NORMAL {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };

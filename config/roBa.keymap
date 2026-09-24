@@ -38,7 +38,7 @@
 
         shift_tab {
             bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <2 3>;
         };
 
         muhennkann {
@@ -48,12 +48,32 @@
 
         double_quotation {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+            key-positions = <31 30>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
+            key-positions = <7 6>;
+        };
+
+        esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <23 24>;
+        };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
             key-positions = <24 25>;
+        };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <12 13>;
         };
     };
 

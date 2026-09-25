@@ -75,6 +75,21 @@
             bindings = <&kp LEFT_ALT>;
             key-positions = <12 13>;
         };
+
+        parentheses {
+            bindings = <&parentheses>;
+            key-positions = <38 1 2>;
+        };
+
+        brackets {
+            bindings = <&brackets>;
+            key-positions = <12 11 38>;
+        };
+
+        braces {
+            bindings = <&braces>;
+            key-positions = <23 24 38>;
+        };
     };
 
     macros {

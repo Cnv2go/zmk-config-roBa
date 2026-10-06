@@ -265,7 +265,7 @@
 
         default_layer {
             bindings = <
-&kp F                             &kp Z         &kp H         &kp P                        &kp MINUS                                                    &kp Q            &kp Y        &lt 5 O  &kp W     &kp V
+&kp F                             &kp Z         &kp H         &kp P                        &kp MINUS                                                    &kp Q            &kp Y        &lt 7 O  &kp W     &kp V
 &kp D                             &kp S         &kp N         &kp T                        &kp G        &kp LEFT_ARROW                 &kp RIGHT_ARROW  &mt BACKSPACE L  &mt MINUS A  &nn 0 I  &xtu 0 U  &mt F7 E
 &mt_exit_AML_on_tap LEFT_SHIFT B  &kp R         &kp M         &kp K                        &kp J        &lt_to_layer_0 6 TAB           &to 3            &kp X            &kp COMMA    &kp C    &kp DOT   &mkp LCLK
 &kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LEFT_SHIFT  &lt 2 SPACE  &mt LANGUAGE_1 LANGUAGE_2      &kp BACKSPACE    &lt 1 ENTER                                      &lt 5 ESCAPE
@@ -332,10 +332,10 @@
 
         SCROLL_NORMAL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &kp LC(PAGE_UP)  &kp LS(TAB)     &trans        &kp LC(PAGE_DOWN)  &kp LEFT_ALT
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &trans          &trans        &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                            &trans
+&kp LS(NUMBER_1)             &kp LS(NUMBER_9)    &kp LS(NUMBER_0)     &kp LS(NUMBER_6)  &kp LS(NUMBER_4)                                &kp LC(PAGE_UP)  &kp LS(TAB)     &trans          &kp LC(PAGE_DOWN)  &kp LEFT_ALT
+&kp LS(SLASH)                &kp LEFT_BRACE      &kp RIGHT_BRACE      &kp STAR          &kp LS(NUMBER_7)  &kp GRAVE      &kp PAGE_UP    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW    &mkp MB5
+&mt LEFT_SHIFT LS(NUMBER_5)  &kp LS(LEFT_BRACE)  &kp LS(RIGHT_BRACE)  &kp LS(NUMBER_3)  &kp LS(NUMBER_2)  &kp SLASH      &kp PAGE_DOWN  &kp TAB          &kp LEFT_ALT    &kp LEFT_SHIFT  &kp LEFT_GUI       &mkp MB4
+&trans                       &trans              &trans               &trans            &trans            &trans         &trans         &trans                                                              &trans
             >;
         };
     };

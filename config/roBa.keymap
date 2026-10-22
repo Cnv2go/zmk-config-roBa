@@ -295,7 +295,7 @@
         GAME {
             bindings = <
 &kp Q             &kp W   &kp E   &kp R    &kp T                           &kp F1          &kp F2          &kp F3        &kp F4           &kp F5
-&kp A             &kp S   &kp D   &kp F    &kp G   &kp N           &kp M   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &mkp MB2
+&kp A             &kp S   &kp D   &kp F    &kp G   &kp N           &kp M   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
 &mt LEFT_SHIFT Z  &kp X   &kp C   &kp V    &kp B   &trans          &to 0   &mt N5 N1       &mt N6 N2       &mt N7 N3     &mt N8 N4        &mt N9 N0
 &trans            &trans  &trans  &kp TAB  &trans  &kp ESCAPE      &trans  &trans                                                         &trans
             >;

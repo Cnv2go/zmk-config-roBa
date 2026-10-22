@@ -41,6 +41,12 @@
     device = <&trackball>;
     input-processors = <&zip_temp_layer ROBA_MOUSE_LAYER 700>;
 
+    // Layer 3（GAME）：オートマウスを無効化
+    game_no_aml {
+        layers = <3>;
+        input-processors = <>;
+    };
+
     scroller_v {
         layers = <ROBA_SCROLL_LAYER>;
         input-processors = <

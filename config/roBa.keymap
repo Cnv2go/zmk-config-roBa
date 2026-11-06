@@ -245,10 +245,10 @@
 
         default_layer {
             bindings = <
-&kp F                             &kp Z         &kp H         &kp P                        &kp MINUS                                                    &kp Q            &kp Y                 &lt 7 O  &kp W             &kp V
-&kp D                             &kp S         &kp N         &kp T                        &kp G        &kp LEFT_ARROW                 &kp RIGHT_ARROW  &mt BACKSPACE L  &mt MINUS A           &nn 0 I  &xtu 0 U          &mt F7 E
-&mt_exit_AML_on_tap LEFT_SHIFT B  &kp R         &kp M         &kp K                        &kp J        &lt_to_layer_0 6 TAB           &to 3            &kp X            &mt APOSTROPHE COMMA  &kp C    &mt SLASH PERIOD  &mkp LCLK
-&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LEFT_SHIFT  &lt 2 SPACE  &mt LANGUAGE_1 LANGUAGE_2      &kp BACKSPACE    &lt 1 ENTER                                                       &lt 5 ESCAPE
+&kp F                             &kp Z         &kp H         &kp P                        &mt LS(EQUAL) MINUS                                                  &kp Q        &kp Y                   &lt 7 O  &kp W             &kp V
+&kp D                             &kp S         &kp N         &kp T                        &kp G                &kp LEFT_ARROW                 &kp RIGHT_ARROW  &mt SPACE L  &mt MINUS A             &nn 0 I  &xtu 0 U          &mt BACKSPACE E
+&mt_exit_AML_on_tap LEFT_SHIFT B  &kp R         &kp M         &kp K                        &kp J                &lt_to_layer_0 6 TAB           &to 3            &kp X        &mt LEFT_BRACKET COMMA  &kp C    &mt SLASH PERIOD  &mkp LCLK
+&kp LCTRL                         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 LEFT_SHIFT  &lt 2 SPACE          &mt LANGUAGE_1 LANGUAGE_2      &kp BACKSPACE    &lt 1 ENTER                                                     &lt 5 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -256,10 +256,10 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3     &kp NUMBER_4  &kp N5                                         &kp NUMBER_6  &mt LS(NUMBER_7) KP_NUMBER_7  &mt LS(NUMBER_8) KP_NUMBER_8  &mt LS(NUMBER_9) KP_NUMBER_9  &mt LS(NUMBER_0) KP_NUMBER_0
-&kp F7        &kp F8             &kp F9           &kp F10       &kp F11  &kp F12      &kp LS(UNDERSCORE)       &kp APOS      &mt LS(NUMBER_4) KP_NUMBER_4  &mt LS(NUMBER_5) KP_NUMBER_5  &mt LS(NUMBER_6) KP_NUMBER_6  &mkp MB5
-&kp F1        &kp F2             &kp F3           &kp F4        &kp F5   &kp F6       &kp LS(INTERNATIONAL_1)  &kp SLASH     &mt LS(NUMBER_1) KP_NUMBER_1  &mt LS(NUMBER_2) KP_NUMBER_2  &mt LS(NUMBER_3) KP_NUMBER_3  &mkp MB4
-&kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans        &trans   &trans       &trans                   &trans                                                                                                  &mkp RCLK
+&kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3     &kp NUMBER_4  &kp N5                                         &kp NUMBER_6              &mt LS(NUMBER_7) KP_NUMBER_7  &mt LS(NUMBER_8) KP_NUMBER_8  &mt LS(NUMBER_9) KP_NUMBER_9  &mt LS(NUMBER_0) KP_NUMBER_0
+&kp F7        &kp F8             &kp F9           &kp F10       &kp F11  &kp F12      &kp LS(UNDERSCORE)       &mt SEMICOLON APOSTROPHE  &mt LS(NUMBER_4) KP_NUMBER_4  &mt LS(NUMBER_5) KP_NUMBER_5  &mt LS(NUMBER_6) KP_NUMBER_6  &mkp MB5
+&kp F1        &kp F2             &kp F3           &kp F4        &kp F5   &kp F6       &kp LS(INTERNATIONAL_1)  &kp SLASH                 &mt LS(NUMBER_1) KP_NUMBER_1  &mt LS(NUMBER_2) KP_NUMBER_2  &mt LS(NUMBER_3) KP_NUMBER_3  &mkp MB4
+&kp K_MUTE    &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans        &trans   &trans       &trans                   &trans                                                                                                              &mkp RCLK
             >;
         };
 
